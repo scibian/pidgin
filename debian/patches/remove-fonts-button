@@ -1,0 +1,24 @@
+Index: pidgin/pidgin/gtkwebviewtoolbar.c
+===================================================================
+--- pidgin.orig/pidgin/gtkwebviewtoolbar.c
++++ pidgin/pidgin/gtkwebviewtoolbar.c
+@@ -1481,7 +1481,7 @@ pidgin_webviewtoolbar_create_lean_view(P
+ 	font_button = gtk_toggle_tool_button_new();
+ 	g_object_set_data_full(G_OBJECT(font_button), "menu-name",
+ 		g_strdup("font"), g_free);
+-	gtk_toolbar_insert(GTK_TOOLBAR(priv->lean_view), font_button, -1);
++	// gtk_toolbar_insert(GTK_TOOLBAR(priv->lean_view), font_button, -1);
+ 	gtk_tool_item_set_is_important(font_button, TRUE);
+ 	gtk_tool_button_set_stock_id(GTK_TOOL_BUTTON(font_button), GTK_STOCK_BOLD);
+ 	priv->font_label = label = gtk_label_new_with_mnemonic(_("_Font"));
+@@ -1513,8 +1513,8 @@ pidgin_webviewtoolbar_create_lean_view(P
+ 	gtk_container_foreach(GTK_CONTAINER(font_menu), enable_markup, NULL);
+ 
+ 	/* Sep */
+-	sep = gtk_separator_tool_item_new();
+-	gtk_toolbar_insert(GTK_TOOLBAR(priv->lean_view), sep, -1);
++	// sep = gtk_separator_tool_item_new();
++	// gtk_toolbar_insert(GTK_TOOLBAR(priv->lean_view), sep, -1);
+ 
+ 	/* Insert */
+ 	insert_button = gtk_toggle_tool_button_new();

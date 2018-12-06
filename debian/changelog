@@ -1,9 +1,16 @@
-pidgin (3.0.0-1+20170623074534~debian) UNRELEASED; urgency=medium
+pidgin (3.0.0-1+20170623074534~0.2) scibian9; urgency=medium
 
+  * Hide the fonts button in the chat windows
+
+ -- Martin Di-Rollo <martin.di-rollo@edf.fr>  Thu, 06 Dec 2018 17:06:57 +0100
+
+pidgin (3.0.0-1+20170623074534~0.1) unstable; urgency=medium
+
+  [ Jakub Adam ]
   * Packaged Pidgin 3.0.0 snapshot with Sipe patches.
   * Auto build.
 
- -- Jakub Adam <jakub.adam@ktknet.cz>  Fri, 23 Jun 2017 09:45:35 +0200
+ -- Martin Di-Rollo <martin.di-rollo@edf.fr>  Thu, 06 Dec 2018 17:06:57 +0100
 
 pidgin (2.11.0-3) unstable; urgency=medium
 
